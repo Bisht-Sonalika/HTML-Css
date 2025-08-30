@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2_website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            min-height: 600px;
+            background-color:rgb(150, 188, 203);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: white;
+            height: 600px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            padding: 20px;
+            gap: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        #cat{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+            height: 10%;
+            width: 80%;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        @media (max-width:500px){
+            #cat{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        button {
+            height: 10%;
+            width: 80%;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+        }
+        .cnt a{
+            text-decoration: none;
+            color: rgb(67, 62, 62);
+            font-weight: bold;
+            font-size: large;
+        }
+        .left{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .amount{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="112ab2e871bf11505ed45587113c8132.svg" alt="img" height="30%" width="400px" border-top-left-radius: 20px;
+            border-top-right-radius: 20px;>
+            <div class="cnt"><h2>Order Summary</h2></div>
+            <div class="cnt"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic beatae nobis placeat explicabo repellat blanditiis voluptate voluptatum saepe atque porro.</p></div>
+            <div id="cat">
+                <div class="left">
+                    <img src="contact.png" alt="ms" height="15%" width="20%">
+                    <div class="amount">
+                        <p>Annual Plan</p><p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="right"><a href="#">Change</a>
+                </div>
+            </div>
+            <button><p>Proceed to Payment</p></button>
+            <div class="cnt"><a href="#">Cancel Payment</a></div>
+        </div>
+    </div>
+</body>
+</html>
